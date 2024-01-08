@@ -8,35 +8,45 @@
   </head>
   <body>
     <div class="heading"><h3>calc</h3></div>
-    <div class="display">0</div>
+    <input class="display" type="text" />
     <div class="numbers">
       <div class="div1">
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
-        <button class="num del">DEL</button>
+        <button value="7" class="num btn7" onclick="displayto(value)">7</button>
+        <button class="num btn8" value="8" onclick="displayto(value)">8</button>
+        <button class="num btn9" value="9" onclick="displayto(value)">9</button>
+        <button class="num del btndel" onclick="deletelast()">DEL</button>
       </div>
       <div class="div2 div1">
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button class="num">+</button>
+        <button class="num btn4" value="4" onclick="displayto(value)">4</button>
+        <button class="num btn5" value="5" onclick="displayto(value)">5</button>
+        <button class="num btn6" value="6" onclick="displayto(value)">6</button>
+        <button class="num btnplus" value="+" onclick="displayto(value)">
+          +
+        </button>
       </div>
       <div class="div3 div1">
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button class="num">-</button>
+        <button class="num btn1" value="1" onclick="displayto(value)">1</button>
+        <button class="num btn2" value="2" onclick="displayto(value)">2</button>
+        <button class="num btn3" value="3" onclick="displayto(value)">3</button>
+        <button class="num btnminus" value="-" onclick="displayto(value)">
+          -
+        </button>
       </div>
       <div class="div4 div1">
-        <button class="num">.</button>
-        <button class="num">0</button>
-        <button class="num">/</button>
-        <button class="num">*</button>
+        <button class="num btndecimal" value="." onclick="displayto(value)">
+          .
+        </button>
+        <button class="num btn0">0</button>
+        <button class="num btndivide" value="/" onclick="displayto(value)">
+          /
+        </button>
+        <button class="num btnmulti" value="*" onclick="displayto(value)">
+          *
+        </button>
       </div>
       <div class="div5 div1">
-        <button class="num reset">RESET</button>
-        <button class="num equal">=</button>
+        <button class="num reset" onclick="deletee()">RESET</button>
+        <button class="num equal" onclick="equal()">=</button>
       </div>
     </div>
 
